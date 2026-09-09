@@ -1,0 +1,31 @@
+#include<stdio.h>     //declaring the standard input-output header file
+
+int main()          //declaring the main() function
+{
+  int a=30, b=5, s, d, p, q, m;       //declaring all variables at the initial stage of the code
+
+//Adding a and b
+s=a+b
+printf("Sum of the two intergers is %d", s);
+
+//Subracting b from a
+d=a-b
+printf("Difference of the two intergers is %d", d);
+
+//Multiplying a and b
+p=a*b
+printf("Product of the two intergers is %d", p);
+
+//Dividing a by b
+q=a/b
+printf("Quotient of the two intergers is %d", q);
+
+//Finding the remainder after dividing a by b
+m=a%b
+printf("Modulus of the two intergers is %d", m);
+
+
+
+return  0;    //returning  0
+
+}        //terminating braces

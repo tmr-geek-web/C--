@@ -1,0 +1,9 @@
+#include<stdio.h>     //declaring the standard input-output header file
+
+int main()          //declaring the main() function
+{
+  printf("Hello World!!");      //printing "Hello World!!"
+
+return  0;    //returning  0
+
+}        //terminating braces

@@ -1,0 +1,49 @@
+//Calculating area of geometrical shapes
+
+#include<stdio.h>
+
+int main()
+{
+	//area of square
+	int side, area;
+	
+	printf("Enter side of square:\n");
+	scanf("%d", &side);
+	
+	area=side*side;
+	
+	printf("Area of square: %d\n", area);
+	
+	//area of circle
+	float radius, area1;
+	
+	printf("Enter radius of circle:\n");
+	scanf("%f", &radius);
+	
+	area1=(3.14)*radius*radius;
+	
+	printf("Area of circle: %f\n", area1);
+	
+	//area of rectangle
+	int l, b, area2;
+	
+	printf("Enter length and breadth of rectangle:\n");
+	scanf("%d %d", &l, &b);
+	
+	area2=l*b;
+	
+	printf("Area of rectangle: %d\n", area2);
+	
+	//area of triangle
+	int b1, h, area3;
+	
+	printf("Enter height and breadth of triangle:\n");
+	scanf("%d %d", &h, &b);
+	
+	area3=(b*h)/2;
+	
+	printf("Area of triangle: %d\n", area3);
+	
+	
+	return 0;
+}

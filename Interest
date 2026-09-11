@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	//Calculating Simple Interest
+	int p, t;
+	float r, si, amt;
+	
+	printf("Enter principal amount, rate of interest and time(in years):");
+	scanf("%d %f %d", &p, &r, &t);
+	
+	si=(p*r*t)/100;
+	printf("Simple interest generated: %f\n", si);
+	
+	amt=p+si;
+	printf("Amount after simple interest: %f\n", amt);
+	
+	
+	
+	//Calculating Compound Interest for the same principal amount, rate of interest and time (in years)
+	
+	float  ci, amt1;
+	
+	amt1=p*pow((1+(r/100)), t);
+	printf("Amount after compound interest: %f\n", amt1);
+	
+	ci=amt1-p;
+	printf("Compound interest generated: %f\n", ci);
+
+	
+	return 0;
+}
+

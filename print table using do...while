@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	
+	
+	int i=1, p;
+
+//taking input of the table  
+	printf("Enter table:");
+	scanf("%d", &p);	
+
+//do..while loop used for calculation
+	do{
+		printf("%d\n",p*i);	//printing table of p 
+		i++;		
+	}while(i<=10);
+	
+	
+	
+	return 0;
+}

@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int a, b, c;
+	float avg;
+	
+	//taking marks input from user
+	printf("Enter marks of three subjects:");
+	scanf("%d %d %d", &a, &b, &c);
+	
+	
+	//calculating average
+	avg=(a+b+c)/3;
+	printf("Average marks: %f\n", avg);   //printing average
+	
+	return 0;
+}

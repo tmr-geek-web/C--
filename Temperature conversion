@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	
+	int  ch;
+	float t, c, f;
+	
+	//taking input the temperature
+	printf("Enter temperature:");
+	scanf("%f", &t);
+	
+	//taking input the choice
+	printf("Enter choice:");
+	scanf("%d", &ch);
+	
+	//taking conversion choice from user using switch case
+	
+	switch(ch)
+	{
+		case 1:
+			f=((t*9)/5) + 32;		//converting temp in C to F
+			printf("Temperature in fahrenheit:%f", f);
+			break;
+			
+		default:
+			c=(t-32) * (5/9);		//converting temp in F to C
+			printf("Temperature in Celsius:%f", c);
+			break;
+			}		
+	
+	return 0;
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	char chr;     
+	
+	printf("Enter a character:");
+	scanf("%c", &chr);    //taking a character as input from user
+	
+	if(chr >= '0' && chr <= '9')    //checking the presence of digits as per ASCII
+	{
+	
+		printf("The character input is a digit");
+  }		
+
+	else
+	{
+		printf("The character input is not a digit");
+	}
+		
+	return 0;
+}

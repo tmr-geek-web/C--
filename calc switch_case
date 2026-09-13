@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main()
+{
+	
+	int ch, a, b;
+	
+	//taking input two integers
+	printf("Enter two integers:");
+	scanf("%d %d", &a, &b);
+	
+	
+	//taking choice as input
+	printf("Enter a choice(1-4):");
+	scanf("%d", &ch);
+	
+	
+	//using switch..case to implement choice
+	switch(ch)
+		
+	{
+	
+		
+		case 1:
+			printf("Sum=:%d", a+b);
+			break;
+			
+		case 2:
+			printf("Difference:%d", a-b);
+			break;
+	
+		case 3:
+			printf("Product:%d", a*b);
+			break;
+		
+		case 4:
+			printf("Quotient:%d", a/b);
+			break;
+			
+		default:
+			printf("Modulus:%.2f", a%b);
+			break;
+		
+	}
+			
+	
+	return 0;
+}

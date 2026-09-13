@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	
+	int c, a, b, max;
+	
+	//taking input three integers
+	printf("Enter two integers:");
+	scanf("%d %d %d", &a, &b, &c);
+	
+	// checking for the greatest number using ternary operators
+	max=(a>b?((a>c)?a:c):((b>c)?b:c));
+	
+	//printing the max value
+	printf("Greatest number is %d", max);
+			
+	
+	return 0;
+}

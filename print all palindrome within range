@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int i, rem, rev=0, temp;
+	
+	for(i=1;i<=200;i++)		//loop to print all palindrome numbers within 200
+	{
+		temp=i;		//assigning the value of i to temp
+		rev=0;
+		while(temp>0)
+		{
+			rem=temp%10;
+			rev=rev*10+rem;
+			temp=temp/10;
+		}
+		
+	
+	if(rev==i)		//checking whether reverse equals original number
+	{
+		printf("%d\n", i);		//printing all palindrome numbers
+	}
+}
+
+    return 0;
+}

@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+int printSum(int a, int b)
+{
+	int s=0;
+	s=a+b;
+	printf("Sum=%d", s);
+	
+}
+
+int printDiff(int a, int b)
+{
+	int d=0;
+	d=a-b;
+	printf("Difference=%d", d);
+	
+}
+
+int printProduct(int a, int b)
+{
+	int p;
+	p=a*b;
+	printf("Product=%d", p);
+	
+}
+
+int printQuotient(int a, int b)
+{
+	int q;
+	q=a/b;
+	printf("Quotient=%d", q);
+	
+}
+
+int printModulo(int a, int b)
+{
+	int m;
+	m=a%b;
+	printf("Modulo=%d", m);
+	
+}
+
+int main()
+{
+	int a, b;
+	
+	printf("Enter two numbers:");
+	scanf("%d %d", &a, &b);
+	
+	printSum(a, b);
+	printDiff(a, b);
+	printProduct(a, b);
+	printQuotient(a, b);
+	printModulo(a, b);
+	
+	return 0;
+}

@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int size, i, sum=0;
+	float avg;
+	
+	printf("Enter size of array:");
+	scanf("%d", &size);
+	
+	int arr[size];
+	
+	printf("Enter %d elements:", size);
+	
+	for(i=0;i<size;i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+	
+	for(i=0;i<size;i++)
+	{
+		sum+=arr[i];
+		
+	}
+	
+	avg=sum/size;
+	
+	printf("Sum and average of all the elements of array is %d and %f", sum, avg);
+	
+	return 0;
+}

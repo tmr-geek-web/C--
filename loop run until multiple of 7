@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	
+	
+	int p;
+		
+	
+	do{
+		printf("Enter a number:");		//taking input from user
+		scanf("%d", &p);
+		printf("You entered:%d\n", p);
+		
+		if(p%7==0)		//checking multiple of 7
+		{
+			break;		//breaking iteration when multiple of 7 is recieved
+		}
+	}while(1);
+	
+	printf("Thank you!");
+	
+	return 0;
+}

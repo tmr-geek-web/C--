@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int n, q, rem, rev=0, temp;
+	printf("Enter a number:");
+	scanf("%d", &n);
+	
+	temp=n; //assigning value of input number to a temp variable
+	
+	while(n>0)	//loop to run onky for positive integers
+	{
+		rem=n%10;
+		rev=rev*10+rem;
+		n=n/10;
+	}
+
+	if(rev==temp)	//checking if original number equals reverse
+	{
+		printf("Palindrome!");
+		
+	}
+	else
+	{
+		printf("Not Palindrome!");
+	}
+
+    return 0;
+}

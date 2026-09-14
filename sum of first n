@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int printSum(int n)		//function definition
+{
+	int sum=0;
+	sum=n*(n+1)/2;
+	
+}
+int main()
+{
+	int n, sum;
+	
+	printf("Enter n:");
+	scanf("%d", &n);
+	
+	sum=printSum(n);		//function call
+	
+	printf("Sum of first %d natural numbers is %d", n, sum);
+	
+	return 0;
+}

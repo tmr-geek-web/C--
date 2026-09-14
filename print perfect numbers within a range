@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int i, j, sum;
+	
+    for(i=1;i<=100;i++)		//printing all perfect numbers within 100
+    {
+    	sum=0;				//resetting sum=0 for every iteration
+    	for(j=1;j<i;j++)
+    	{
+    		if(i%j==0)		//checking divisors
+    		{
+    			sum+=j;		//adding all divisors
+			}
+		}
+	
+	
+	if(sum==i)		//if sum of all divisors equals the original number
+	{						      //the number is perfect
+		printf("%d\n", i);
+	}
+
+}
+
+    return 0;
+}

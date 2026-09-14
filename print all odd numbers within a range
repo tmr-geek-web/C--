@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	
+	
+	int p;
+		
+	for(p=5;p<=50;p++)		//setting range
+	{
+		if(p%2==0)		//checking even
+		{
+			continue;		//skipping the even numbers
+		}
+		
+		printf("%d\n", p);		//printing the odd numbers
+	}
+	
+	return 0;
+}

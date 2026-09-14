@@ -1,0 +1,113 @@
+#include<stdio.h>
+
+//program to print: *****
+			         //		****
+		          	//	***
+			        //		**
+			        //		*
+
+int main()
+{
+	int num, i, j;
+	
+    printf("Enter the number of rows:");
+    scanf("%d", &num);
+    
+    for(i=num;i>=1;i--)
+    {
+    	for(j=i;j>=1;j--)
+    	{
+    		printf("*");
+		}
+	
+	printf("\n");
+}
+
+	printf("\n");
+
+//program to print: *****
+			//		         ****
+			//		          ***
+			//		           **
+			//	            	*
+
+	int k, l;
+	
+	 for(k=0;k<num;k++)
+    {
+    	for(l=0;l<k;l++)
+    	{
+    		printf(" ");
+		}
+    	for(l=0;l<num-k;l++)
+    	{
+    		printf("*");
+		}
+	printf("\n");
+}
+
+	printf("\n"); 
+	
+//program to print:  *
+		        	//		* *
+	      		//	   * * *
+	      		//	  * * * *
+	      		//	 * * * * *
+			
+			
+		int m, n;
+		
+		for(m=1;m<=num;m++)
+		{
+			for(n=1;n<=num-m;n++)
+			{
+					printf(" ");
+			}
+			for(n=1;n<=m;n++)
+			{
+					printf("* ");
+			}
+			
+		printf("\n");
+		
+	}
+
+			printf("\n");
+			
+//program to print: * * *
+	        		//		 * *
+	        		//		  *
+        			//		 * *
+      			//	    * * *
+	int p, q;
+		
+		
+		for(p=num;p>=1;p--)
+		{
+			for(q=0;q<num-p;q++)
+			{
+				printf(" ");
+			}
+			for(q=1;q<=p;q++)
+			{
+				printf("* ");
+			}
+			
+		printf("\n");
+		}
+		
+		for(p=2;p<=num;p++)
+		{
+			for(q=0;q<num-p;q++)
+			{
+				printf(" ");
+			}
+			for(q=1;q<=p;q++)
+			{
+				printf("* ");
+			}
+			
+		printf("\n");
+		}
+    return 0;
+}

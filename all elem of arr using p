@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int arr[]={1,2,3,4,5};	//input array
+	int *p=arr;			//storing address of a in pointer p
+	
+	int size=sizeof(arr)/sizeof(arr[0]);	//size of array is calculated
+	
+	int i;
+	
+	for(i=0;i<size;i++)
+	{
+		printf("%d ", *(p+i));		//printing each element of array
+	}
+	
+	return 0;
+}
